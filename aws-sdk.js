@@ -4,8 +4,8 @@
 // applications. See aws-sdk-tests.js for an example of importing.
 AWS = Npm.require('aws-sdk');
 
-let awsAccessKey = process.env.AWS_ACCESS_KEY_ID;
-let awsSecretKey = process.env.AWS_SECRET_ACCESS_KEY;
+var awsAccessKey = process.env.AWS_ACCESS_KEY_ID;
+var awsSecretKey = process.env.AWS_SECRET_ACCESS_KEY;
 
 if (!awsAccessKey || !awsSecretKey) {
     awsAccessKey = Meteor.settings.private.aws.accessKeyId;
